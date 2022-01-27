@@ -1,0 +1,51 @@
+Sidor:
+-Start.
+-Portfolio.
+-Kontakt.
+-Personlig sida för vardera medlem.
+
+Grafisk illustration av skills.
+
+Kontaktformulär:
+-Realtidsvalidering av mail.
+
+Nav-meny till alla webplatsens sidor.
+VG: Smal skärm: Navicon som vecklas ut när man klickar. Sker utan att sidan laddas om.
+	Stor skärm: Länkarna syns utan att man behöver klicka.
+
+Responsiv sida:
+-Ingen horisontell scroll.
+-Mobile first.
+-Flexbox.
+-G: Bootstrap. VG: media queries.
+-Två storlekar räcker.
+
+HTML- och CSS-dokumenten ska valideras med W3's tjänst.
+
+CSS i separata filer.
+Övergripande CSS-fil för alla sidor.
+Separata sidor kan ha kompletterande CSS-fil.
+
+Någon form av animering på valfri plats.
+-CSS eller JS.
+
+VG: Bildspel:
+-Effekt på övergången.
+-Ska kunna pausa.
+
+VG-bonuspoäng:
+-Valfri applicering av JS-funktionalitet som är fint och livar upp.
+-Knapp för dark/light mode?
+-Knapp för att få en vits?
+
+
+
+Sidor:
+Start:
+Bildspel med bilder från projekten. Klickar man på bilden kommer man till det projektet. Pausar när man hovrar. Pausknapp.
+
+Profil: Animerad visning av skills. Visas lite olika för varje person.
+
+Kontakt: Ett formulär som inte leder nånvart.
+
+Portfolio: Vi är konstnärer. Vi ritar i paint.
