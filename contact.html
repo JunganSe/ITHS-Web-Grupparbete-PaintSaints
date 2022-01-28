@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-main.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    
+    <header>
+        Header
+        <div class="fake-image">Header-image</div>
+    </header>
+
+    <div class="flex-container">
+
+        <nav>
+            Navknapp
+            <a href="/index.html">Home</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/artists.html">Artists</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    
+        <section class="main-content">
+
+            <form action="imaginary-server.php" id="contact-form">
+                <input type="text" class="form-text" id="form-name" name="name" placeholder="Name" required><br>
+                <input type="text" class="form-text" id="form-phone" name="phone" placeholder="Phone number"><br>
+                <input type="email" class="form-text" id="form-email" name="email" placeholder="E-mail" required><br>
+
+                <input type="checkbox" id="form-checkbox" name="checkbox" required> <!-- Anti-spam -->
+                <label for="form-checkbox">Jag tycker att ni är duktiga</label><br>
+
+                <textarea id="form-message" name="message" cols="30" rows="10"></textarea><br>
+
+                <input type="submit" value="Send">
+            </form>
+
+        </section>
+        
+    </div>
+
+    <footer>
+        Footer: copyright etc...
+    </footer>
+    
+</body>
+</html>

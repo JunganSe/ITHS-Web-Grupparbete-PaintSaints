@@ -1,0 +1,31 @@
+#contact-form {
+    text-align: center;
+    padding: 25px;
+}
+
+#contact-form .form-text {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#contact-form .form-text::placeholder{
+    color: purple;
+}
+
+#contact-form #form-checkbox {
+    background-color: green;
+    color: springgreen;
+    border: 3px solid red;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#contact-form #form-message {
+    border: 3px solid green;
+    padding: 10px;
+    margin: 20px;
+}
