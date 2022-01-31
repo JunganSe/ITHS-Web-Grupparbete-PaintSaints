@@ -30,12 +30,12 @@
             <form action="imaginary-server.php" id="contact-form">
                 <input type="text" class="form-text" id="form-name" name="name" placeholder="Name" required><br>
                 <input type="text" class="form-text" id="form-phone" name="phone" placeholder="Phone number"><br>
-                <input type="email" class="form-text" id="form-email" name="email" placeholder="E-mail" required><br>
+                <input type="email" class="form-text" id="form-email" name="email" placeholder="E-mail" pattern=".+@.+\..+" required><br> <!-- pattern: x@y.z -->
 
                 <input type="checkbox" id="form-checkbox" name="checkbox" required> <!-- Anti-spam -->
                 <label for="form-checkbox">Jag tycker att ni är duktiga</label><br>
 
-                <textarea id="form-message" name="message" cols="30" rows="10"></textarea><br>
+                <textarea id="form-message" name="message" cols="30" rows="10" placeholder="Message" required></textarea><br>
 
                 <input type="submit" value="Send">
             </form>

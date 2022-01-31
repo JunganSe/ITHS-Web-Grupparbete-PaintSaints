@@ -4,28 +4,43 @@
 }
 
 #contact-form .form-text {
-    background-color: white;
     color: black;
-    border-radius: 15px;
+    background-color: rgb(200, 234, 255);
+    border: 5px solid blue;
+    border-radius: 20px;
+    height: 40px;
     padding: 10px;
     margin: 20px;
 }
 
-#contact-form .form-text::placeholder{
+#contact-form .form-text::placeholder {
     color: purple;
 }
 
+#contact-form .form-text:valid,
+#contact-form #form-message:valid {
+    border-color: green;
+}
+
+#contact-form .form-text:invalid,
+#contact-form #form-message:invalid {
+    border-color: red;
+}
+
 #contact-form #form-checkbox {
+    /* Färger verkar inte fungera. */
     background-color: green;
     color: springgreen;
     border: 3px solid red;
+
     border-radius: 25px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 5px;
 }
 
 #contact-form #form-message {
-    border: 3px solid green;
+    border: 5px solid blue;
+    border-radius: 15px;
     padding: 10px;
     margin: 20px;
 }
