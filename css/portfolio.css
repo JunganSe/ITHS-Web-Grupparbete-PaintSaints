@@ -1,0 +1,16 @@
+.flex-container-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* width: auto; */
+}
+
+@media screen and (min-width:992px) {
+    .flex-container-inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article {
+        width: 33.333333333%;
+    }
+}
