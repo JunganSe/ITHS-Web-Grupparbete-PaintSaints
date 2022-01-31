@@ -49,20 +49,9 @@ body{
     text-align: center;
 }
 
-#img-welcome {
-    width: 400px;
-}
-
 @media screen and (min-width:768px) {
     .flex-container {
         flex-direction: row;
     }
 }
-
-
-
-
-
-
-
 
