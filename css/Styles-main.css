@@ -29,6 +29,7 @@ body{
 .flex-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* nav {
@@ -36,7 +37,7 @@ body{
 } */
 
 .main-content {
-    height: 800px;
+    height: auto;
     width: 100%;
 }
 
@@ -52,6 +53,9 @@ body{
 @media screen and (min-width:768px) {
     .flex-container {
         flex-direction: row;
+    }
+    .main-content {
+        width: 33%;
     }
 }
 
