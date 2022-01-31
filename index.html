@@ -14,22 +14,35 @@
 <body>
     
     <header>
-        Header
-        <div class="fake-image">Header-image</div>
+        <div class="fake-image"></div>
     </header>
-
+    
     <div class="flex-container">
 
-        <nav>
-            Navknapp
-            <a href="/index.html">Home</a>
-            <a href="/portfolio.html">Portfolio</a>
-            <a href="/artists.html">Artists</a>
-            <a href="/contact.html">Contact</a>
+        <nav class="navbar">
+            <ul id="nav">
+                <li><a href="index.html">Menu</a>
+                    <ul>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="artists.html">artists</a>
+                            <ul>
+                                <li><a href="artists/dennis.html">Dennis</a></li>
+                                <li><a href="artists/johan.html">Johan</a></li>
+                                <li><a href="artists/oscar.html">Oscar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>  
+            </ul>
         </nav>
     
         <section class="main-content">
             Välkomstsida
+            <div class="image-box">
+                <img src="/images/art1.png" id="img-welcome">
+                <p>Bildtext</p>
+            </div>
             <div class="image-box">
                 <img src="/images/art1.png" id="img-welcome">
                 <p>Bildtext</p>
