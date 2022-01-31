@@ -10,17 +10,22 @@ header, nav, section, footer, .image-box, .navbar {
 }
 
 .fake-image {
-    width: 100%;
+    width: 300px;
     height: 100px;
     background-color: slateblue;
     text-align: center;
     padding: 40px;
     margin: auto;
+}
+
+header {
     background-image: url("/images/BackgroundMenu.webp");
 }
+
 body{
     background-image: url("/images/mainBackground.jpg");
 }
+
 .flex-container {
     display: flex;
     flex-direction: column;
