@@ -5,28 +5,27 @@
 }
 
 :root{
-    --skill-label-size: 100px; /* Anpassa denna efter den längsta texten. */
-    --skill-bar-thickness: 30px;
+    --skill-label-size: 105px; /* Anpassa denna efter den längsta texten. */
+    --skill-bar-thickness: 20px;
     --skill-bar-color: crimson;
 }
 
 /* Debug: */
-.skill-box { border: 1px solid black; }
-.bar-box { border: 1px solid red; }
-.skill-label, .bar-constraint { border: 1px solid blue; }
+.skill-container { border: 1px solid black; }
+/* .skill-box { border: 1px solid red; }
+.skill-label, .bar-constraint { border: 1px solid blue; } */
 
-.skill-box {
+.skill-container {
     position: relative;
     display: flex;
     flex-direction: column;
 
     left: 100px;
     top: 100px;
-    width: 500px;
-    height: 400px;
+    width: 80%;
 }
 
-.bar-box {
+.skill-box {
     display: flex;
     align-items: center;
     padding: 10px 0px;
@@ -50,7 +49,7 @@
     border-radius: var(--skill-bar-thickness);
     background-color: var(--skill-bar-color);
 
-    animation-name: anim-skillbar;
+    animation-name: anim-skill-bar;
     animation-duration: 2s;
     animation-delay: 1s;
     animation-iteration-count: 1;
@@ -74,9 +73,9 @@
     --target-width: 100%;
 }
 
-@keyframes anim-skillbar {
+@keyframes anim-skill-bar {
     0% {
-        width: var(--skill-bar-thickness);
+        width: var(--skill-bar-thickness); /* Gör att edn börjar som en boll. */
     }
     100% {
         width: var(--target-width);
