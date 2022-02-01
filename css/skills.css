@@ -16,34 +16,31 @@
 .skill-label, .bar-constraint { border: 1px solid blue; } */
 
 .skill-container {
-    position: relative;
+    position: relative; /* Denna kanske är dum. */
     display: flex;
     flex-direction: column;
-
-    left: 100px;
-    top: 100px;
     width: 80%;
 }
 
-.skill-box {
+.skill-container .skill-box {
     display: flex;
     align-items: center;
     padding: 10px 0px;
 }
 
-.skill-label {
+.skill-container .skill-label {
     text-align: right;
     width: var(--skill-label-size);
 }
 
-.bar-constraint {
+.skill-container .bar-constraint {
     display: inline-block;
     width: calc(100% - var(--skill-label-size));
     margin: 0px 10px;
     height: var(--skill-bar-thickness);
 }
 
-.bar {
+.skill-container .bar {
     display: inline-block;
     height: var(--skill-bar-thickness);
     border-radius: var(--skill-bar-thickness);
@@ -75,7 +72,7 @@
 
 @keyframes anim-skill-bar {
     0% {
-        width: var(--skill-bar-thickness); /* Gör att edn börjar som en boll. */
+        width: var(--skill-bar-thickness); /* Gör att den börjar som en boll. */
     }
     100% {
         width: var(--target-width);
