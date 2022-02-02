@@ -1,50 +1,106 @@
-#nav li{
-    list-style: none inside;
+nav label{
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    float: right;
+    font-size: 40px;
+    margin-right: 20px;
+
+    
+}
+
+nav .menu{
+    text-align: right;
+    background: black;
+    width: 100%;
+    position: absolute;
+    right: 3px;
+    top: 155px;
+    padding: 10px;
+    transform:scale(1,0);
+    transform-origin: top;
+    transition: transform  ease-in-out;
+    
+    
+}
+
+nav .menu a{
+    clear: right;
+    color: white;
+    border-bottom: 1px solid #646262;
+    display: block;
     margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#nav li{
-    display:  block;
-    background-color: black;
-
-}
-
-
-#nav li a{
-    width: 120px;
-    
-    color:  white;
-    border: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    display: inline-block;
+    font-size: 32px;
     text-decoration: none;
-    line-height: 40px;
-    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
     
 }
-
-
-
-#nav li:hover ul ul {
+nav span{
+    color: yellow;
+}
+#toggle{
     display: none;
 }
-#nav li:hover ul {
-    display: block;
+#toggle:checked + .menu{
+    display: block; 
+    transform:scale(1,1);
+}
+
+#toggle:checked + .menu a{
+    opacity: 1;
+    transition: opacity 200ms ease-in-out 200ms;
+
+}
+@media screen and (min-width:992px) {  
+    #toggle, nav label{
+        display: none;
+    }  
+    nav{
+        
+        text-align: right;    
+        /* flex-direction: column; */
+        /* position: static; */
+        border: 2px solid #646262;
+        background: black;
+        opacity: 1;
+    }
+    
+    nav .menu {
+        all: unset;
+        margin: 0;
+        display: block;
+        position: static;
+        width: 100%;
+        top: 0px;
+        background: black;
+        opacity: 1;
+        
+    }
+    
+    nav .menu a{    
+        background: black;
+        color: white;
+        margin: 0 10px;
+        line-height: 60px;
+        opacity: 1;
+        font-size: 24px;
+        text-align: center;
+        
+        
+    }
+    nav .menu a:hover{
+        color: coral;
+
+    }
+    nav .menu span:hover{
+        color: coral;
+    }
+    
+    nav label{
+        margin: 0 40px 0 0;      
+        line-height: 70px;
+        
+    }
     
 }
-#nav li li:hover ul {
-    display: block;
-    position: absolute;
-    margin-left: 124px;
-    margin-top: -50px;
-}
-#nav ul {
-    position: absolute;
-    padding: 0;
-    left: 0;
-    display: none;
-    
-        }

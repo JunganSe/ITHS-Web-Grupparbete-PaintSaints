@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles-main.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/dropdown-menu.css">
     <title>Contact</title>
 </head>
 <body>
     
     <header>
-        Header
         <div class="fake-image">Header-image</div>
     </header>
 
     <div class="flex-container">
 
         <nav>
-            Navknapp
-            <a href="/index.html">Home</a>
-            <a href="/portfolio.html">Portfolio</a>
-            <a href="/artists.html">Artists</a>
-            <a href="/contact.html">Contact</a>
+            <label for="toggle">&#9776 </label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="contact.html"><span>Contact</span></a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="artists.html">Artists</a>
+            </div>
         </nav>
     
         <section class="main-content">
