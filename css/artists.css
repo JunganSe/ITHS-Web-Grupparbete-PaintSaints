@@ -1,0 +1,42 @@
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-content h1 {
+    margin-bottom: 30px;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    position: relative;
+    /* border: 1px solid red; */
+    size: 50%;
+}
+
+#artist-red, 
+#artist-orange, 
+#artist-green {
+    z-index: 1;
+    position: absolute;
+    /* border: 1px solid blue; */
+}
+#artist-red {
+    width: 32.5%;
+    height: 100%;
+    left: 0px;
+}
+#artist-orange {
+    width: 31%;
+    height: 100%;
+    left: 32.5%;
+}
+#artist-green {
+    width: 36.5%;
+    height: 100%;
+    right: 0px;
+}
