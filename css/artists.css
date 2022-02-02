@@ -23,20 +23,18 @@
 #artist-green {
     z-index: 1;
     position: absolute;
+    height: 100%;
     /* border: 1px solid blue; */
 }
 #artist-red {
     width: 32.5%;
-    height: 100%;
     left: 0px;
 }
 #artist-orange {
     width: 31%;
-    height: 100%;
     left: 32.5%;
 }
 #artist-green {
     width: 36.5%;
-    height: 100%;
     right: 0px;
 }
