@@ -11,8 +11,8 @@
 }
 
 #contact-form .form-text,
-#contact-form #form-message,
-#contact-form #form-submit {
+#form-message,
+#form-submit {
     color: black;
     border: 2px solid black;
     border-radius: 20px;
@@ -25,38 +25,52 @@
 }
 
 #contact-form .form-text::placeholder,
-#contact-form #form-message::placeholder {
+#form-message::placeholder {
     color: purple;
 }
 
 #contact-form .form-text:valid,
-#contact-form #form-message:valid {
+#form-message:valid {
     background-color: rgb(187, 255, 187);
 }
 #contact-form .form-text:invalid,
-#contact-form #form-message:invalid {
+#form-message:invalid {
     background-color: rgb(255, 158, 158);
 }
 
-#contact-form #form-checkbox {
-    /* Färger verkar inte fungera. */
-    background-color: green;
-    color: springgreen;
-    border: 3px solid red;
-
-    border-radius: 25px;
-    padding: 20px;
-    margin: 20px 5px;
+#fake-checkbox {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25%;
 }
 
-#contact-form #form-submit {
+#form-checkbox:checked + #fake-checkbox {
+    background-color: rgb(187, 255, 187);
+}
+
+#form-checkbox {
+    margin: 20px 5px;
+    display: none;
+}
+
+#form-message {
+    width: 80%;
+    max-width: 600px;
+}
+
+#form-submit {
     background-color: skyblue;
     padding-left: 50px;
     padding-right: 50px;
 }
-#contact-form #form-submit:hover {
+#form-submit:hover {
     background-color: rgb(42, 167, 42);
 }
-#contact-form #form-submit:active {
+#form-submit:active {
     background-color: rgb(0, 102, 0);
 }

@@ -52,15 +52,13 @@ nav span{
     transition: opacity 200ms ease-in-out 200ms;
 
 }
-@media screen and (min-width:992px) {  
+@media screen and (min-width:768px) {  
     #toggle, nav label{
         display: none;
     }  
     nav{
         
-        text-align: right;    
-        /* flex-direction: column; */
-        /* position: static; */
+        text-align: right;
         border: 2px solid #646262;
         background: black;
         opacity: 1;
