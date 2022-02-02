@@ -1,3 +1,8 @@
+:root {
+    --form-color-valid: rgb(187, 255, 187);
+    --form-color-invalid: rgb(255, 158, 158);
+}
+
 .main-content h1 {
     font-family: "Comic Sans", "Comic Sans MS";
     font-size: 30px;
@@ -10,7 +15,7 @@
     padding: 25px;
 }
 
-#contact-form .form-text,
+.form-text,
 #form-message,
 #form-submit {
     color: black;
@@ -20,24 +25,27 @@
     margin: 20px;
 }
 
-#contact-form .form-text {
+.form-text {
     height: 40px;
 }
 
-#contact-form .form-text::placeholder,
+.form-text::placeholder,
 #form-message::placeholder {
     color: purple;
 }
-
-#contact-form .form-text:valid,
+.form-text:valid,
 #form-message:valid {
-    background-color: rgb(187, 255, 187);
+    background-color: var(--form-color-valid);
 }
-#contact-form .form-text:invalid,
+.form-text:invalid,
 #form-message:invalid {
-    background-color: rgb(255, 158, 158);
+    background-color: var(--form-color-invalid);
 }
 
+#form-checkbox {
+    margin: 20px 5px;
+    display: none;
+}
 #fake-checkbox {
     display: inline-block;
     position: relative;
@@ -46,16 +54,22 @@
     height: 30px;
     background-color: white;
     border: 2px solid black;
-    border-radius: 25%;
+    border-radius: 33%;
 }
+#form-checkbox:checked + #fake-checkbox::after {
+    box-sizing: border-box;
+    content:'X';
+    padding: 4px;
 
-#form-checkbox:checked + #fake-checkbox {
-    background-color: rgb(187, 255, 187);
-}
-
-#form-checkbox {
-    margin: 20px 5px;
-    display: none;
+    display: inline-block;
+    position: absolute;
+    left: -2px; /* wtf */
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--form-color-valid);
+    border: 2px solid black;
+    border-radius: 33%;
 }
 
 #form-message {
