@@ -4,27 +4,27 @@
     margin: auto;
   }
 
-  .slides {
+  .slideshow-container .slides {
     display: none;
   }
 
-  .text {
-    color: white;
+  .slideshow-container .text {
+    color: rgb(189, 189, 189);
     font-size: 20px;
     padding: 10px 14px;
-    position: absolute;
+    position: relative;
     bottom: 6px;
     width: 100%;
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   
-  .button{
+  .slideshow-container .button{
     background-color: #FFFFFF;
     border: 2px solid rgb(209,213,219);
     border-radius:  0.75rem;
     font-size: 0.75rem;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     height: 30px;
     width: 60px;
@@ -33,11 +33,11 @@
     position: relative;
   }
 
-  .button:hover {
+  .slideshow-container .button:hover {
     background-color: rgb(241, 241, 241);
   }
 
-  .fade-animation {
+  .slideshow-container .fade-animation {
     -webkit-animation-name: fade-animation;
     -webkit-animation-duration: 2;
     animation-name: fade-animation;
