@@ -39,14 +39,16 @@
     background-color: var(--form-color-invalid);
 }
 
-#form-checkbox {
-    margin: 20px 5px;
-    display: none;
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    margin: auto;
 }
 #fake-checkbox {
     display: inline-block;
-    position: relative;
-    top: 10px;
+    position: absolute;
+    top: -5px;
+    left: -17px;
     width: 30px;
     height: 30px;
     background-color: white;
