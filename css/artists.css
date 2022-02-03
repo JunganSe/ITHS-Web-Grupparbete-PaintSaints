@@ -15,7 +15,9 @@
 .image-container {
     position: relative;
     /* border: 1px solid red; */
-    size: 50%;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
 }
 
 #artist-red, 

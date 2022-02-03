@@ -16,10 +16,13 @@
 .skill-label, .bar-constraint { border: 1px solid blue; } */
 
 .skill-container {
-    position: relative; /* Denna kanske är dum. */
+    /*position: relative; /* Denna kanske är dum. */
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: 80%;
+    height: 100%;
+    padding: 10px 0px;
 }
 
 .skill-container .skill-box {

@@ -11,16 +11,28 @@
 .flex-container-inner { border: 2px solid green; } */
 
 .main-content {
-    min-height: 700px;
+    min-height: 800px;
 }
 
 .main-content h1 {
     font-family: "Comic Sans", "Comic Sans MS";
     font-size: 30px;
     text-align: center;
+    width: 100%;
 }
+.main-content h2 {
+    font-family: "Comic Sans", "Comic Sans MS";
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
 .main-content a { 
     text-decoration: none;   
+}
+.main-content a:hover {
+    color: crimson;
 }
 
 .fake-thumbnail {
@@ -70,6 +82,10 @@ article {
     float: left;
     text-align: center;
     max-width: 300px;
+}
+
+.image-box img {
+    width: 100%;
 }
 
 @media screen and (min-width:768px) {

@@ -1,5 +1,5 @@
 :root{
-    --skill-label-size: 105px; /* Anpassa denna efter den längsta texten. */
+    --skill-label-size: 155px; /* Anpassa denna efter den längsta texten. */
     --skill-bar-thickness: 20px;
     --skill-bar-color: crimson;
 }
@@ -12,20 +12,21 @@
     animation-duration: 2s;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
+    
 }
 
 #bar1 {
-    --target-width: 30%;
+    --target-width: 90%;
 }
 #bar2 {
-    --target-width: 80%;
+    --target-width: 10%;
 }
 #bar3 {
-    --target-width: 50%;
+    --target-width: 80%;
 }
 #bar4 {
-    --target-width: 70%;
+    --target-width: 50%;
 }
 #bar5 {
-    --target-width: 100%;
+    --target-width: 56%;
 }
