@@ -1,0 +1,31 @@
+:root{
+    --skill-label-size: 105px; /* Anpassa denna efter den längsta texten. */
+    --skill-bar-thickness: 20px;
+    --skill-bar-color: crimson;
+}
+
+.skill-container {
+    width: 80%;
+}
+
+.skill-container .bar {
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+#bar1 {
+    --target-width: 30%;
+}
+#bar2 {
+    --target-width: 80%;
+}
+#bar3 {
+    --target-width: 50%;
+}
+#bar4 {
+    --target-width: 70%;
+}
+#bar5 {
+    --target-width: 100%;
+}

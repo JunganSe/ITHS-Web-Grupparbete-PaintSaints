@@ -11,8 +11,8 @@
 }
 
 /* Debug: */
-.skill-container { border: 1px solid black; }
-/* .skill-box { border: 1px solid red; }
+/* .skill-container { border: 1px solid black; }
+.skill-box { border: 1px solid red; }
 .skill-label, .bar-constraint { border: 1px solid blue; } */
 
 .skill-container {
@@ -54,21 +54,7 @@
     animation-fill-mode: both;
 }
 
-#bar1 {
-    --target-width: 30%;
-}
-#bar2 {
-    --target-width: 80%;
-}
-#bar3 {
-    --target-width: 50%;
-}
-#bar4 {
-    --target-width: 70%;
-}
-#bar5 {
-    --target-width: 100%;
-}
+
 
 @keyframes anim-skill-bar {
     0% {

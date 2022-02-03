@@ -1,0 +1,45 @@
+.flex-container-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.main-content h1 {
+    margin: 30px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-box {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+article {
+    padding: 0px 50px;
+}
+
+.skill-container {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+
+@media screen and (min-width:768px) {
+    .flex-container-inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .image-box {
+        align-self: flex-start;
+    }
+    article {
+        width: calc(100% - 252px);
+        max-width: 1000px;
+    }
+    .skill-container {
+        max-width: 768px;
+    }
+}

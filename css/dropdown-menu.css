@@ -1,15 +1,17 @@
-nav label{
+:root {
+    --navbar-width: 110px;
+}
+
+nav label {
     display: block;
     cursor: pointer;
     width: 20px;
     float: right;
     font-size: 40px;
     margin-right: 20px;
-
-    
 }
 
-nav .menu{
+nav .menu {
     text-align: right;
     background: black;
     width: 100%;
@@ -21,10 +23,13 @@ nav .menu{
     transform-origin: top;
     transition: transform  ease-in-out;
     z-index: 5;
-    
 }
 
-nav .menu a{
+nav span {
+    color: yellow;
+}
+
+nav .menu a {
     clear: right;
     color: white;
     border-bottom: 1px solid #646262;
@@ -36,30 +41,36 @@ nav .menu a{
     transition: opacity 100ms ease-in-out;
     
 }
-nav span{
-    color: yellow;
+nav .menu a:hover {
+    color: coral;
+
 }
+nav .menu span:hover {
+    color: coral;
+}
+
 #toggle{
     display: none;
 }
-#toggle:checked + .menu{
+#toggle:checked + .menu {
     display: block; 
     transform:scale(1,1);
 }
 
-#toggle:checked + .menu a{
+#toggle:checked + .menu a {
     opacity: 1;
     transition: opacity 200ms ease-in-out 200ms;
-
 }
+
+
+
 @media screen and (min-width:768px) {  
-    #toggle, nav label{
+    #toggle, nav label {
         display: none;
-    }  
-    nav{
-        
+    }
+
+    nav {
         text-align: right;
-        border: 2px solid #646262;
         background: black;
         opacity: 1;
     }
@@ -69,14 +80,13 @@ nav span{
         margin: 0;
         display: block;
         position: static;
-        width: 100%;
+        width: var(--navbar-width);
         top: 0px;
         background: black;
         opacity: 1;
-        
     }
     
-    nav .menu a{    
+    nav .menu a {    
         background: black;
         color: white;
         margin: 0 10px;
@@ -84,21 +94,10 @@ nav span{
         opacity: 1;
         font-size: 24px;
         text-align: center;
-        
-        
-    }
-    nav .menu a:hover{
-        color: coral;
-
-    }
-    nav .menu span:hover{
-        color: coral;
     }
     
-    nav label{
-        margin: 0 40px 0 0;      
+    nav label {
+        margin: 0 40px 0 0;    
         line-height: 70px;
-        
     }
-    
 }
