@@ -25,6 +25,7 @@
     position: absolute;
     height: 100%;
     /* border: 1px solid blue; */
+    top: 0px;
 }
 #artist-red {
     width: 32.5%;

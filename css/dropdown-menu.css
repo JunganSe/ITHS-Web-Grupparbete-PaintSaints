@@ -20,7 +20,7 @@ nav .menu{
     transform:scale(1,0);
     transform-origin: top;
     transition: transform  ease-in-out;
-    
+    z-index: 5;
     
 }
 
