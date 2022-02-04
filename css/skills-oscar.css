@@ -6,6 +6,8 @@
 
 .skill-container {
     width: 80%;
+    border: 1px solid black;
+    margin-bottom: 30px;
 }
 
 .skill-container .bar {
@@ -15,17 +17,17 @@
 }
 
 #bar1 {
-    --target-width: 30%;
+    --target-width: 100%;
 }
 #bar2 {
-    --target-width: 80%;
+    --target-width: 10%;
 }
 #bar3 {
-    --target-width: 50%;
+    --target-width: 80%;
 }
 #bar4 {
-    --target-width: 70%;
+    --target-width: 30%;
 }
 #bar5 {
-    --target-width: 100%;
+    --target-width: 20%;
 }
