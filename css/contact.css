@@ -3,10 +3,6 @@
     --form-color-invalid: rgb(255, 158, 158);
 }
 
-.main-content h1 {
-    margin-top: 40px;
-}
-
 #contact-form {
     text-align: center;
     padding: 25px;
@@ -47,7 +43,7 @@
 #fake-checkbox {
     display: inline-block;
     position: absolute;
-    top: -5px;
+    top: -5px; /* wtf */
     left: -17px;
     width: 30px;
     height: 30px;
@@ -62,7 +58,7 @@
 
     display: inline-block;
     position: absolute;
-    left: -2px; /* wtf */
+    left: -2px;
     top: -2px;
     width: 30px;
     height: 30px;

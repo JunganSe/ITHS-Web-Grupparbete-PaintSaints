@@ -1,11 +1,20 @@
 :root{
-    --skill-label-size: 165px; /* Anpassa denna efter den längsta texten. */
+    --skill-label-size: 160px; /* Anpassa denna efter den längsta texten. */
     --skill-bar-thickness: 20px;
     --skill-bar-color: crimson;
 }
 
+@media screen and (min-width:768px) {
+    article {
+        width: calc(100% - 247px); /* 247 är bildens bredd */
+        max-width: 900px;
+    }
+}
+
+
+
 .skill-container {
-    width: 80%;
+    /* width: 80%; */
     border: 10px ridge crimson;
     margin-bottom: 30px;
     background-color: rgba(50, 50, 50, 0.3);
@@ -15,7 +24,7 @@
     font-family: serif;
 }
 
-.skill-container .bar {
+.skill-container .skill-bar {
     border: 2px solid #333;
     animation-duration: 2s;
     animation-delay: 1s;
@@ -45,7 +54,7 @@
 
 @keyframes anim-skill-bar {
     0% {
-        width: var(--skill-bar-thickness); /* Gör att den börjar som en boll. */
+        width: var(--skill-bar-thickness);
     }
     50% {
         width: calc(0.8 * var(--target-width));

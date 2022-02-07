@@ -1,26 +1,19 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 :root{
-    --skill-label-size: 105px; /* Anpassa denna efter den längsta texten. */
+    --skill-label-size: 100px; /* Anpassa denna efter den längsta texten. */
     --skill-bar-thickness: 20px;
     --skill-bar-color: crimson;
 }
 
 /* Debug: */
-/* .skill-container { border: 1px solid black; }
-.skill-box { border: 1px solid red; }
-.skill-label, .bar-constraint { border: 1px solid blue; } */
+/* .skill-container { border: 1px solid black; } */
+/* .skill-box { border: 1px solid red; } */
+/* .skill-label, .bar-constraint { border: 1px solid blue; } */
 
 .skill-container {
-    /*position: relative; /* Denna kanske är dum. */
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 80%;
+    width: 90%;
     height: 100%;
     padding: 10px 0px;
 }
@@ -43,7 +36,7 @@
     height: var(--skill-bar-thickness);
 }
 
-.skill-container .bar {
+.skill-container .skill-bar {
     display: inline-block;
     height: var(--skill-bar-thickness);
     border-radius: var(--skill-bar-thickness);
@@ -57,13 +50,20 @@
     animation-fill-mode: both;
 }
 
-
-
 @keyframes anim-skill-bar {
     0% {
         width: var(--skill-bar-thickness); /* Gör att den börjar som en boll. */
     }
     100% {
         width: var(--target-width);
+    }
+}
+
+
+
+@media screen and (min-width:768px) {
+    .skill-container {
+        width: 80%;
+        max-width: 768px;
     }
 }

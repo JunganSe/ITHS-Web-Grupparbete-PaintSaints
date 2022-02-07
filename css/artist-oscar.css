@@ -4,13 +4,22 @@
     --skill-bar-color: green;
 }
 
+@media screen and (min-width:768px) {
+    article {
+        width: calc(100% - 251px); /* 251 är bildens bredd */
+        max-width: 900px;
+    }
+}
+
+
+
 .skill-container {
-    width: 80%;
+    /* width: 80%; */
     border: 1px solid black;
     margin-bottom: 30px;
 }
 
-.skill-container .bar {
+.skill-container .skill-bar {
     animation-duration: 2s;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;

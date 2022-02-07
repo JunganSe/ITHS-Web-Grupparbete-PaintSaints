@@ -5,11 +5,15 @@
     width: 90%;
   }
 
-  .slideshow-container .slides {
+  .slideshow-container .slideshow-slides {
     display: none;
   }
 
-  .slideshow-container .text {
+  .slideshow-container img {
+    width: 100%;
+  }
+
+  .slideshow-container .slideshow-caption {
     color: rgb(189, 189, 189);
     font-size: 20px;
     padding: 10px 14px;
@@ -20,7 +24,7 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   
-  .slideshow-container .button{
+  #slideshow-pause-button {
     background-color: #FFFFFF;
     border: 2px solid rgb(209,213,219);
     border-radius:  0.75rem;
@@ -34,23 +38,23 @@
     position: relative;
   }
 
-  .slideshow-container .button:hover {
+  #slideshow-pause-button:hover {
     background-color: rgb(241, 241, 241);
   }
 
-  .slideshow-container .fade-animation {
-    -webkit-animation-name: fade-animation;
+.slideshow-fade-animation {
+    -webkit-animation-name: anim-fade;
     -webkit-animation-duration: 2;
-    animation-name: fade-animation;
+    animation-name: anim-fade;
     animation-duration: 2s;
   }
   
-  @-webkit-keyframes fade-animation {
+  @-webkit-keyframes anim-fade {
     from {opacity: .2}
     to {opacity: 1}
   }
   
-  @keyframes fade-animation {
+  @keyframes anim-fade {
     from {opacity: .2}
     to {opacity: 1}
   }
