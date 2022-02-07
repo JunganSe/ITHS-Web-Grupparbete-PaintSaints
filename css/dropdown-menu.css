@@ -1,5 +1,10 @@
 :root {
     --navbar-width: 110px;
+    --nav-height: 60px;
+}
+
+nav {
+    height: var(--nav-height);
 }
 
 nav label {
@@ -54,7 +59,7 @@ nav .menu span:hover {
 }
 #toggle:checked + .menu {
     display: block; 
-    transform:scale(1,1);
+    transform: scale(1,1);
 }
 
 #toggle:checked + .menu a {
@@ -73,6 +78,7 @@ nav .menu span:hover {
         text-align: right;
         background: black;
         opacity: 1;
+        height: unset;
     }
     
     nav .menu {

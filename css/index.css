@@ -1,3 +1,8 @@
 .main-content h1 {
     margin: 30px 0px;
 }
+
+.main-content p {
+    text-align: center;
+    margin: 20px;
+}
