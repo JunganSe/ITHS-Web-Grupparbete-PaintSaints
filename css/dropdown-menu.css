@@ -11,7 +11,7 @@ nav {
     color: white;
     background-color: black;
     text-align: center;
-    
+    z-index: 5;
 }
 
 nav label {
@@ -21,8 +21,6 @@ nav label {
     float: right;
     font-size: 40px;
     margin-right: 20px;
-    
-    
 }
 
 nav .menu {
@@ -37,8 +35,8 @@ nav .menu {
     transform:scale(1,0);
     transform-origin: top;
     transition: transform  ease-in-out;
-    z-index: 5;
 }
+
 nav h1{
     font-family: "Comic Sans", "Comic Sans MS";
     font-variant: small-caps;
@@ -49,6 +47,7 @@ nav h1{
     margin-right: -70%;
     text-align: right;
 }
+
 nav span {
     color: yellow;
 }
@@ -57,11 +56,11 @@ nav span {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
   
 .sticky + .content {
     padding-top: 60px;
-  }
+}
 
 nav .menu a {
     clear: right;
@@ -73,7 +72,6 @@ nav .menu a {
     text-decoration: none;
     opacity: 0;
     transition: opacity 100ms ease-in-out;
-    
 }
 nav .menu a:hover {
     color: coral;
@@ -83,25 +81,23 @@ nav .menu span:hover {
     color: coral;
 }
 
-#toggle{
+#menu-toggle {
     display: none;
 }
-#toggle:checked + .menu {
+#menu-toggle:checked + .menu {
     display: block; 
     transform: scale(1,1);
-    
 }
 
-#toggle:checked + .menu a {
+#menu-toggle:checked + .menu a {
     opacity: 1;
     transition: opacity 200ms ease-in-out 200ms;
-    
 }
 
 
 
 @media screen and (min-width:768px) {  
-    #toggle, nav label {
+    #menu-toggle, nav label {
         display: none;
     }
 
@@ -113,7 +109,7 @@ nav .menu span:hover {
         position: -webkit-sticky;
     }
 
-    nav h1{
+    nav h1 {
         display: none;
     }
     
