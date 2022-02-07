@@ -29,15 +29,30 @@
     /* border: 1px solid blue; */
     top: 0px;
 }
+
 #artist-red {
     width: 32.5%;
     left: 0px;
 }
+#artist-red:hover {
+    background-color: red;
+    opacity: 15%;
+}
+
 #artist-orange {
     width: 31%;
     left: 32.5%;
 }
+#artist-orange:hover {
+    background-color: orange;
+    opacity: 30%;
+}
+
 #artist-green {
     width: 36.5%;
     right: 0px;
+}
+#artist-green:hover {
+    background-color: green;
+    opacity: 20%;
 }

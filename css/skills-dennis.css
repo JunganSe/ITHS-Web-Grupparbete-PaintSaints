@@ -1,11 +1,18 @@
 :root{
     --skill-label-size: 155px; /* Anpassa denna efter den längsta texten. */
     --skill-bar-thickness: 20px;
-    --skill-bar-color: crimson;
+    --skill-bar-color: orange;
 }
 
 .skill-container {
+    
     width: 80%;
+    border: 6px dashed orange;
+    color: orange;
+    background-color: black;
+    border-radius: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .skill-container .bar {
@@ -14,6 +21,34 @@
     animation-timing-function: ease-in-out;
     
 }
+.skill-container span{
+    font-family: "Comic Sans", "Comic Sans MS";
+}
+
+.skill-container #bar1 {
+    animation-duration: 1s;
+}
+.skill-container #bar2 {
+    animation-delay: 2s;
+    animation-duration: 2s;
+}
+.skill-container #bar3 {
+    animation-delay: 4s;
+    animation-duration: 2s;
+}
+.skill-container #bar4 {
+    animation-delay: 6s;
+    animation-duration: 2s;
+}
+.skill-container #bar5 {
+    animation-delay: 8s;
+    animation-duration: 2s;
+}
+.skill-container #bar6 {
+    animation-delay: 10s;
+    animation-duration: 2s;
+}
+
 
 #bar1 {
     --target-width: 90%;
@@ -29,4 +64,7 @@
 }
 #bar5 {
     --target-width: 56%;
+}
+#bar6 {
+    --target-width: 75%;
 }

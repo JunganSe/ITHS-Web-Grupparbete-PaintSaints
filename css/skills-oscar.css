@@ -1,7 +1,7 @@
 :root{
     --skill-label-size: 105px; /* Anpassa denna efter den längsta texten. */
     --skill-bar-thickness: 20px;
-    --skill-bar-color: crimson;
+    --skill-bar-color: green;
 }
 
 .skill-container {
