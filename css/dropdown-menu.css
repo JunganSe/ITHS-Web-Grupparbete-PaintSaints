@@ -5,6 +5,13 @@
 
 nav {
     height: var(--nav-height);
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
 }
 
 nav label {
@@ -14,25 +21,47 @@ nav label {
     float: right;
     font-size: 40px;
     margin-right: 20px;
+    
+    
 }
 
 nav .menu {
     text-align: right;
     background: black;
-    width: 100%;
     position: absolute;
-    right: 3px;
-    top: 155px;
+    width: 100%;
+    right: 0px;
+    top: 50px;
+    position: -webkit-sticky;
     padding: 10px;
     transform:scale(1,0);
     transform-origin: top;
     transition: transform  ease-in-out;
     z-index: 5;
 }
-
+nav h1{
+    font-family: "Comic Sans", "Comic Sans MS";
+    font-variant: small-caps;
+    color: white;
+    opacity: 1;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: -70%;
+    text-align: right;
+}
 nav span {
     color: yellow;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .content {
+    padding-top: 60px;
+  }
 
 nav .menu a {
     clear: right;
@@ -60,11 +89,13 @@ nav .menu span:hover {
 #toggle:checked + .menu {
     display: block; 
     transform: scale(1,1);
+    
 }
 
 #toggle:checked + .menu a {
     opacity: 1;
     transition: opacity 200ms ease-in-out 200ms;
+    
 }
 
 
@@ -79,6 +110,11 @@ nav .menu span:hover {
         background: black;
         opacity: 1;
         height: unset;
+        position: -webkit-sticky;
+    }
+
+    nav h1{
+        display: none;
     }
     
     nav .menu {
@@ -90,6 +126,9 @@ nav .menu span:hover {
         top: 0px;
         background: black;
         opacity: 1;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10px;
     }
     
     nav .menu a {    
