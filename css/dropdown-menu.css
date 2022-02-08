@@ -31,6 +31,7 @@ nav .menu {
     right: 0px;
     top: 50px;
     position: -webkit-sticky;
+    position: sticky;
     padding: 10px;
     transform:scale(1,0);
     transform-origin: top;
@@ -50,16 +51,6 @@ nav h1{
 
 nav span {
     color: yellow;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-  
-.sticky + .content {
-    padding-top: 60px;
 }
 
 nav .menu a {
@@ -107,6 +98,7 @@ nav .menu span:hover {
         opacity: 1;
         height: unset;
         position: -webkit-sticky;
+        position: sticky;
     }
 
     nav h1 {
@@ -126,7 +118,7 @@ nav .menu span:hover {
         position: sticky;
         top: 10px;
     }
-    
+
     nav .menu a {    
         background: black;
         color: white;
