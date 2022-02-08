@@ -38,15 +38,17 @@ nav .menu {
     transition: transform  ease-in-out;
 }
 
-nav h1{
+nav p {
     font-family: "Comic Sans", "Comic Sans MS";
     font-variant: small-caps;
     color: white;
     opacity: 1;
     display: inline-block;
-    margin-top: 15px;
-    margin-right: -70%;
+    margin-top: 12px;
+    margin-right: -75%;
     text-align: right;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav span {
