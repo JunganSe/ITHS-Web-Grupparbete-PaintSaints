@@ -45,9 +45,6 @@ article {
         width: 45%;
         margin: var(--article-margin) 0px 0px 0px;
     }
-    .image-box {
-        max-width: 300px;
-    }
     .main-content {
         margin-bottom: var(--article-margin);
     }
