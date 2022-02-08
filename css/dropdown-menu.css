@@ -35,7 +35,7 @@ nav .menu {
     padding: 10px;
     transform:scale(1,0);
     transform-origin: top;
-    transition: transform  ease-in-out 200ms;
+    transition: transform  ease-in-out;
 }
 
 nav p {
