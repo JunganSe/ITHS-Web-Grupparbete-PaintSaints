@@ -35,7 +35,7 @@ nav .menu {
     padding: 10px;
     transform:scale(1,0);
     transform-origin: top;
-    transition: transform  ease-in-out;
+    transition: transform  ease-in-out 200ms;
 }
 
 nav p {
@@ -95,7 +95,6 @@ nav .menu span:hover {
     }
 
     nav {
-        text-align: right;
         background: black;
         opacity: 1;
         height: unset;
@@ -111,9 +110,7 @@ nav .menu span:hover {
         all: unset;
         margin: 0;
         display: block;
-        position: static;
         width: var(--navbar-width);
-        top: 0px;
         background: black;
         opacity: 1;
         position: -webkit-sticky;
@@ -129,10 +126,5 @@ nav .menu span:hover {
         opacity: 1;
         font-size: 24px;
         text-align: center;
-    }
-    
-    nav label {
-        margin: 0 40px 0 0;    
-        line-height: 70px;
     }
 }
