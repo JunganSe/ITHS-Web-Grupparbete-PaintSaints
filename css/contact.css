@@ -6,6 +6,7 @@
 #contact-form {
     text-align: center;
     padding: 25px;
+    padding-top: 0px;
 }
 
 .form-text,
@@ -38,7 +39,7 @@
 .checkbox-container {
     display: inline-block;
     position: relative;
-    margin: auto;
+    margin: 25px;
 }
 #fake-checkbox {
     display: inline-block;
