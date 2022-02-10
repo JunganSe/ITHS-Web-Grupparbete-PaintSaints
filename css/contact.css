@@ -52,6 +52,9 @@
     border: 2px solid black;
     border-radius: 33%;
 }
+#form-checkbox {
+    visibility: hidden;
+}
 #form-checkbox:checked + #fake-checkbox::after {
     box-sizing: border-box;
     content:'X';
