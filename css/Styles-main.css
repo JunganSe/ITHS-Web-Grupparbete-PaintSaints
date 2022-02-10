@@ -63,7 +63,8 @@ footer {
     background-color: black;
     background-image: url("/images/feet.jpg");
     background-size: contain;
-    background-position: center;
+    background-repeat: repeat no-repeat;
+    background-position: center bottom;
     height: var(--footer-height);
 }
 
